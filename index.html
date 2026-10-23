@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Stickman Parkour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gameContainer">
+    <div class="ui-overlay">
+        <div id="levelDisplay">LEVEL: 1</div>
+        <div id="scoreDisplay">COINS: 0</div>
+    </div>
+    <canvas id="gameCanvas" width="900" height="480"></canvas>
+    
+    <!-- ဖုန်းအတွက် အသုံးပြုနိုင်မည့် အထိန်းချုပ်ခလုတ်များ -->
+    <div class="game-controls">
+        <div class="d-pad">
+            <button id="leftBtn" class="ctrl-btn">◀ LEFT</button>
+            <button id="rightBtn" class="ctrl-btn">RIGHT ▶</button>
+        </div>
+        <div class="action-pad">
+            <button id="dashBtn" class="ctrl-btn dash-btn">⚡ Dash</button>
+            <button id="jumpBtn" class="ctrl-btn jump-btn">⬆ Jump</button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <span>[A/D]</span> သို့မဟုတ် <span>[←/→]</span> Move | 
+        <span>[W/Space]</span> Double Jump | 
+        <span>[Shift]</span> Dash | 
+        <span>[R]</span> Restart
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
